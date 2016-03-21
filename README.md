@@ -12,7 +12,5 @@
 ### 应用截图
 ---
 
-![输入图片说明](/Users/mac/Desktop/1.gif "在这里输入图片标题")
-![应用截图](/Users/mac/Desktop/2.gif "截图2")
-
-![输入图片说明](http://git.oschina.net/uploads/images/2016/0309/123359_475990f3_662138.jpeg "在这里输入图片标题")
+![输入图片说明](http://upload-images.jianshu.io/upload_images/1759967-d533b7393d51962a.gif "在这里输入图片标题")
+![应用截图](http://upload-images.jianshu.io/upload_images/1759967-d69881385d432c8d.gif "截图2")

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FZLTXIHJW.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </mutableArray>
+        <mutableArray key="FZLTZCHJW.TTF">
+            <string>FZLTZCHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="185" id="ue5-8r-ohm" customClass="FTVideoViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ue5-8r-ohm" id="Sv7-dP-c0i">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wr9-gW-0ba">
+                        <rect key="frame" x="8" y="8" width="350" height="168"/>
+                    </imageView>
+                    <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4Z-K2-Co9">
+                        <rect key="frame" x="8" y="8" width="350" height="168"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ira-iM-9yn">
+                        <rect key="frame" x="322" y="134" width="16" height="22"/>
+                        <state key="normal" image="like_video"/>
+                        <state key="selected" image="like_video_1"/>
+                        <state key="highlighted" image="like_video_1"/>
+                        <state key="focused" image="like_video_1"/>
+                        <connections>
+                            <action selector="collectVideo:" destination="ue5-8r-ohm" eventType="touchUpInside" id="DVt-FX-ct1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXg-rj-EY6">
+                        <rect key="frame" x="165" y="121" width="36" height="15"/>
+                        <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-UJ-xpU">
+                        <rect key="frame" x="18" y="83" width="330" height="18"/>
+                        <fontDescription key="fontDescription" name="FZLTZCHJW--GB1-0" family="FZLanTingHeiS-DB1-GB" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GXg-rj-EY6" firstAttribute="top" secondItem="lcp-UJ-xpU" secondAttribute="bottom" constant="20" id="31q-ME-nXs"/>
+                    <constraint firstItem="lcp-UJ-xpU" firstAttribute="centerX" secondItem="Sv7-dP-c0i" secondAttribute="centerX" id="Etb-1e-sPn"/>
+                    <constraint firstItem="GXg-rj-EY6" firstAttribute="centerX" secondItem="Sv7-dP-c0i" secondAttribute="centerX" id="FyD-ER-wCm"/>
+                    <constraint firstItem="lcp-UJ-xpU" firstAttribute="leading" secondItem="Sv7-dP-c0i" secondAttribute="leadingMargin" constant="10" id="Glx-jZ-YDK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Wr9-gW-0ba" secondAttribute="trailing" id="Hzu-3g-5oo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lcp-UJ-xpU" secondAttribute="trailing" constant="10" id="Jtm-lE-fUd"/>
+                    <constraint firstItem="W4Z-K2-Co9" firstAttribute="top" secondItem="Sv7-dP-c0i" secondAttribute="topMargin" id="Kgc-RW-QR8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ira-iM-9yn" secondAttribute="bottom" constant="20" id="Luz-fk-aXo"/>
+                    <constraint firstItem="GXg-rj-EY6" firstAttribute="top" secondItem="Ira-iM-9yn" secondAttribute="bottom" constant="20" id="OIb-Pi-oa6"/>
+                    <constraint firstItem="Wr9-gW-0ba" firstAttribute="top" secondItem="Sv7-dP-c0i" secondAttribute="topMargin" id="PNo-JX-TLJ"/>
+                    <constraint firstItem="GXg-rj-EY6" firstAttribute="top" secondItem="Sv7-dP-c0i" secondAttribute="topMargin" constant="110" id="SDW-o6-9nL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W4Z-K2-Co9" secondAttribute="bottom" id="bdr-hD-fgg"/>
+                    <constraint firstItem="W4Z-K2-Co9" firstAttribute="leading" secondItem="Sv7-dP-c0i" secondAttribute="leadingMargin" id="lhZ-by-Ahd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ira-iM-9yn" secondAttribute="trailing" constant="20" id="sLI-bF-Bpk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="W4Z-K2-Co9" secondAttribute="trailing" id="utM-Nn-pV0"/>
+                    <constraint firstItem="Wr9-gW-0ba" firstAttribute="bottom" secondItem="Sv7-dP-c0i" secondAttribute="bottomMargin" id="vSD-O5-Caf"/>
+                    <constraint firstItem="lcp-UJ-xpU" firstAttribute="centerY" secondItem="Sv7-dP-c0i" secondAttribute="centerY" id="yo3-jl-LnV"/>
+                    <constraint firstItem="Wr9-gW-0ba" firstAttribute="leading" secondItem="Sv7-dP-c0i" secondAttribute="leadingMargin" id="ytD-gy-MIo"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OIb-Pi-oa6"/>
+                        <exclude reference="SDW-o6-9nL"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionBtn" destination="Ira-iM-9yn" id="Jmb-3y-wwj"/>
+                <outlet property="durationLabel" destination="GXg-rj-EY6" id="SPF-RM-20L"/>
+                <outlet property="smallImageView" destination="Wr9-gW-0ba" id="dC4-D4-HAM"/>
+                <outlet property="titleLabel" destination="lcp-UJ-xpU" id="Nhv-F1-hvC"/>
+            </connections>
+            <point key="canvasLocation" x="260" y="300.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like_video" width="16" height="16"/>
+        <image name="like_video_1" width="16" height="16"/>
+    </resources>
+</document>

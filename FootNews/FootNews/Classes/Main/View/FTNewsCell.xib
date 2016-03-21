@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FZLTXIHJW.TTF">
+            <string>FZLTXIHJW--GB1-0</string>
+        </mutableArray>
+        <mutableArray key="FZLTZCHJW.TTF">
+            <string>FZLTZCHJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="newsCell" id="iN0-l3-epB" customClass="FTNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQu-9Y-KSx">
+                    <rect key="frame" x="10" y="10" width="300" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="ytw-ev-uOy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr6-Ce-ef0" userLabel="内容">
+                    <rect key="frame" x="10" y="246" width="300" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DRg-26-Ouw"/>
+                        <constraint firstAttribute="height" constant="60" id="Zel-KF-bW6"/>
+                    </constraints>
+                    <string key="text">据《阿斯报》报道，在马德里国家德比打进制胜一球之后，马竞前锋格列兹曼本赛季已为球队打进20粒进球，这已是他连续三年单赛季为效力球队打进20球了。现在马竞队内的联赛最佳射手格列兹曼在联赛中打进13球，在欧冠打进4球以及在国王杯打进3球。他在皇家社会的最后一个赛季里为球队在所有赛事中（50场）打进20球。格列兹曼在联赛中打进16球，在国王</string>
+                    <fontDescription key="fontDescription" name="FZLTXIHJW--GB1-0" family="FZLanTingHeiS-L-GB" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zel-KF-bW6"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pda-md-c7f">
+                    <rect key="frame" x="0.0" y="305" width="320" height="5"/>
+                    <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="tsR-PL-dJ6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="格列兹曼连续三年进球数达20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayh-hf-kVf" userLabel="标题">
+                    <rect key="frame" x="10" y="213" width="300" height="25"/>
+                    <accessibility key="accessibilityConfiguration" label="标题"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="1HO-F1-1a2"/>
+                        <constraint firstAttribute="height" constant="25" id="9ug-KK-HNr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FZLTZCHJW--GB1-0" family="FZLanTingHeiS-DB1-GB" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9ug-KK-HNr"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="阿斯报" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-QH-Xtd" userLabel="来源">
+                    <rect key="frame" x="274" y="287" width="36" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ayh-hf-kVf" firstAttribute="leading" secondItem="JQu-9Y-KSx" secondAttribute="leading" constant="10" id="0dl-7y-Qcw"/>
+                <constraint firstItem="pda-md-c7f" firstAttribute="top" secondItem="3Cj-QH-Xtd" secondAttribute="bottom" id="337-6T-Bq7"/>
+                <constraint firstAttribute="bottom" secondItem="pda-md-c7f" secondAttribute="bottom" id="3Nr-BP-cxG"/>
+                <constraint firstAttribute="trailing" secondItem="pda-md-c7f" secondAttribute="trailing" id="5Qa-I9-ch0"/>
+                <constraint firstAttribute="trailing" secondItem="yr6-Ce-ef0" secondAttribute="trailing" constant="10" id="5R3-OG-zOj"/>
+                <constraint firstItem="3Cj-QH-Xtd" firstAttribute="top" secondItem="yr6-Ce-ef0" secondAttribute="bottom" constant="4" id="8Tt-2m-45y"/>
+                <constraint firstItem="JQu-9Y-KSx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9A0-s1-Sq1"/>
+                <constraint firstAttribute="trailing" secondItem="3Cj-QH-Xtd" secondAttribute="trailing" constant="5" id="GcV-t8-bUH"/>
+                <constraint firstItem="ayh-hf-kVf" firstAttribute="top" secondItem="JQu-9Y-KSx" secondAttribute="bottom" constant="5" id="MKT-3t-ztM"/>
+                <constraint firstItem="yr6-Ce-ef0" firstAttribute="top" secondItem="ayh-hf-kVf" secondAttribute="bottom" constant="8" id="O4P-OZ-wId"/>
+                <constraint firstItem="3Cj-QH-Xtd" firstAttribute="top" secondItem="yr6-Ce-ef0" secondAttribute="bottom" id="Q8D-Qe-WFl"/>
+                <constraint firstItem="pda-md-c7f" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UeX-VC-laW"/>
+                <constraint firstItem="yr6-Ce-ef0" firstAttribute="top" secondItem="ayh-hf-kVf" secondAttribute="bottom" constant="5" id="Vao-c5-25S"/>
+                <constraint firstItem="ayh-hf-kVf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="gJe-jz-dd9"/>
+                <constraint firstAttribute="bottom" secondItem="3Cj-QH-Xtd" secondAttribute="bottom" constant="2" id="gzx-bR-dps"/>
+                <constraint firstAttribute="trailing" secondItem="ayh-hf-kVf" secondAttribute="trailing" constant="10" id="hLO-wn-HET"/>
+                <constraint firstItem="yr6-Ce-ef0" firstAttribute="top" secondItem="ayh-hf-kVf" secondAttribute="bottom" constant="5" id="pXv-r2-RpM"/>
+                <constraint firstItem="JQu-9Y-KSx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="q65-Hb-TAr"/>
+                <constraint firstAttribute="trailing" secondItem="JQu-9Y-KSx" secondAttribute="trailing" constant="10" id="qCj-kh-P4k"/>
+                <constraint firstItem="3Cj-QH-Xtd" firstAttribute="top" secondItem="yr6-Ce-ef0" secondAttribute="bottom" constant="4" id="qKU-2t-daV"/>
+                <constraint firstAttribute="trailing" secondItem="3Cj-QH-Xtd" secondAttribute="trailing" constant="10" id="rNz-Ip-wQQ"/>
+                <constraint firstItem="yr6-Ce-ef0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vkk-bt-I5b"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0dl-7y-Qcw"/>
+                    <exclude reference="MKT-3t-ztM"/>
+                    <exclude reference="Vao-c5-25S"/>
+                    <exclude reference="pXv-r2-RpM"/>
+                    <exclude reference="8Tt-2m-45y"/>
+                    <exclude reference="GcV-t8-bUH"/>
+                    <exclude reference="Q8D-Qe-WFl"/>
+                    <exclude reference="gzx-bR-dps"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="ImgLinkView" destination="JQu-9Y-KSx" id="ROO-xd-yAz"/>
+                <outlet property="authorLabel" destination="3Cj-QH-Xtd" id="BME-bn-Syo"/>
+                <outlet property="contentLabel" destination="yr6-Ce-ef0" id="Yvq-wM-v6D"/>
+                <outlet property="imageView" destination="JQu-9Y-KSx" id="lAZ-ae-jkS"/>
+                <outlet property="titleLabel" destination="ayh-hf-kVf" id="KZ8-f0-9SQ"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="-226"/>
+        </view>
+    </objects>
+</document>
